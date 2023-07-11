@@ -1,0 +1,77 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.descuentos{
+    background-color: purple;
+    text-align: center;
+}
+header nav ul li{
+   list-style: none;
+}
+header{
+   background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+header nav ul{
+    display: flex;
+    gap: 1rem;
+}
+main{
+    margin: 1rem 2rem 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.2fr 0.5fr 3fr;
+    grid-template-areas: 
+            "Titulo"
+            "Parrafo"
+            "Imagen";
+    gap: 1rem;
+    justify-items: center;
+}
+main h1{
+    grid-area: Titulo;
+}
+main .parrafo-main {
+    grid-area: Parrafo;
+    text-align: center;
+}
+main .imagen-main{
+    grid-area: Imagen;
+    
+}
+main .boton a{
+    padding: 0.5rem 1rem;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 15%;
+       
+}
+.productos-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 12rem;
+    
+}
+.productos-inicio div .producto1-home{
+    width: 50%;
+    height: 50%;
+    
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 1024px){
+    
+}
